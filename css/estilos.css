@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-image: url("../assets/images/fondo-dog.jpg");
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top:30px;
+    font-family: monserrat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contenedor-grid{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.575);
+}
+header a:hover{
+    color:burlywood;
+    font-weight:bolder;
+}
+.links{
+    text-align: end;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+a h2{
+    margin-left: 10px;
+    color: whitesmoke;
+}
+nav a{
+    padding: 10px;
+    color: black;
+    font-weight: 800;
+}
+.imgCarrusel{
+    height: 50vh;
+    object-fit: contain;
+    background-color: rgba(250, 235, 215, 0.575);
+}
+.maincontent{
+    padding-left: 10px;
+    display: flex;
+    color: black;
+    background-color: rgba(250, 235, 215, 0.575);
+    padding-top: 20px;
+}
+p a{
+    color: blue;
+}
+.maincontent span{
+    color:brown;
+}
+.maincontent img{
+    align-items: center;
+}
+
+.foot{
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+
+/*NOSOTROS*/
+.caja1nos{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: 
+    "nostxt nosimg"
+    "nostxt2 nostxt2"
+    "nosvideo nosvideo";
+}
+.nostxt{
+    grid-area: nostxt;
+    justify-self: center;
+    align-items: center;
+}
+.nosimg{
+    grid-area: nosimg;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+}
+.nostxt2{
+    grid-area: nostxt2;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.nosvideo{
+    grid-area: nosvideo;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    bottom:50px
+
+}
+.fondoblanco{
+    background-color: rgba(250, 235, 215, 0.575);
+}
+/*servicios*/
+
+.mainservicios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+/*contacto*/
+.maincontacto{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+}
+.cardcontacto{
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+}
+.formcontacto{
+    background-color: rgba(250, 235, 215, 0.596);
+    border: 1px black solid;
+    border-radius: 3%;
+    padding: 10px;
+    margin-right: 10px;
+}
+/*planes*/
+.plan1{
+    background-color: rgba(127, 255, 212, 0.658);
+    text-align: center;
+}
+.plan2{
+    background-color: rgba(255, 235, 205, 0.637);
+    text-align: center;
+}
+.plan3{
+    background-color: rgba(255, 0, 0, 0.658);
+    text-align: center;
+}
+.botonadquirir{
+    justify-content: end;
+    color: black;
+    font-weight: bolder;
+    margin-top: 20px    ;
+}
+/***MEDIA QUERY***/ 
+
+@media (max_width: 768){
+    .contenedor-grid{
+        grid-template-areas: 
+        "cabecera"
+        "navegacion"
+        "carrusel"
+        "principal"
+        "pie";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.2fr repeat(2,1fr) 0.5fr;
+    }
+
+}
