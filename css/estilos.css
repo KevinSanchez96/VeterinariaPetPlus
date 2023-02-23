@@ -252,7 +252,7 @@ p a{
     .formcontacto{
         display: block;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     /**Planes**/
     .mainplanes{
@@ -264,9 +264,51 @@ p a{
 
 }
 /**MEDIA QUERY TABLET**/
-@media (min-width:769px)and(max-width:1024px) {
-    /*index*/
-    .foot p{
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+{
+    /*INDEX*/
+    .copyr{
         color: black;
+    }
+    .maincontent{
+        display: inline;
+    }
+    .imgindex{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /*NOSOTROS*/
+    .nosimg img{
+        width: 400px;
+        margin: 10px;
+    }
+    .nosvideo{
+        margin-top: 30px;
+    }
+    /*Servicios*/
+    .card{
+        margin: 10px;
+    }
+    .mainservicios{
+        margin-bottom: 20px;
+    }
+    /*Contacto*/
+    .maincontacto{
+    }
+    .cardcontacto{
+        text-align: center;
+
+    }
+    .formcontacto{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    /*planes*/
+    .mainplanes{
+        display: block;
+        margin: 10px;
     }
 }
