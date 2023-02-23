@@ -93,8 +93,12 @@ p a{
 }
 .nostxt{
     grid-area: nostxt;
-    justify-self: center;
-    align-items: center;
+    text-align: center;
+    align-self: center;
+
+}
+.nostxt h1{
+    font-weight: bolder;
 }
 .nosimg{
     grid-area: nosimg;
@@ -165,8 +169,11 @@ p a{
     font-weight: bolder;
     margin-top: 20px    ;
 }
+
+
 /***MEDIA QUERY***/ 
-@media (max-width:576px) {
+@media (max-width:768px) {
+    /**index**/
     .contenedor-grid{
         grid-template-areas: 
         "cabecera"
@@ -203,14 +210,62 @@ p a{
     }
     .foot p{
         color: black;
+    }/*Servicios*/
+
+        .card{
+            margin: 10px;
+        }
+    /**Nosotros**/
+    .contenedor-nosotros{
+        grid-template-areas: 
+        "cabecera"
+        "mainnos"
+        "pie"
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 0.5fr;
     }
-}
-@media (max-width:768px){
-    .maincontent{
-        display: inline-block;
+    .caja1nos{
+        grid-area: mainnos;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
         text-align: center;
-        margin: 10px;
     }
+    .nosimg{
+        display: block;
+        margin: auto;
+    }
+    .nosvideo{
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    /**Contacto**/
+    .maincontacto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cardcontacto{
+        display: block;
+        margin: auto;
+    }
+    .formcontacto{
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    /**Planes**/
+    .mainplanes{
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+
+}
+/**MEDIA QUERY TABLET**/
+@media (min-width:769px)and(max-width:1024px) {
+    /*index*/
     .foot p{
         color: black;
     }
