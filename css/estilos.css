@@ -175,6 +175,7 @@ p a{
 @media (max-width:768px) {
     /**index**/
     .contenedor-grid{
+        display: grid;
         grid-template-areas: 
         "cabecera"
         "carrusel"  
@@ -211,29 +212,35 @@ p a{
     .foot p{
         color: black;
     }/*Servicios*/
-
-        .card{
-            margin: 10px;
-        }
+    .mainservicios{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .card{
+        margin: 10px;
+    }
     /**Nosotros**/
     .contenedor-nosotros{
         grid-template-areas: 
         "cabecera"
-        "mainnos"
-        "pie"
+        "main"
+        "pie";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+    .nosimg img{
+        display: inline-block;
+        width: 100%;
+        align-items: center;
+        
+    }
     .caja1nos{
-        grid-area: mainnos;
+        grid-area: main;
         display: flex;
         flex-wrap: wrap;
         margin-top: 10px;
         text-align: center;
-    }
-    .nosimg{
-        display: block;
-        margin: auto;
     }
     .nosvideo{
         display: block;
@@ -246,8 +253,9 @@ p a{
         flex-wrap: wrap;
     }
     .cardcontacto{
-        display: block;
+        display: inline-block;
         margin: auto;
+
     }
     .formcontacto{
         display: block;
@@ -258,7 +266,7 @@ p a{
     .mainplanes{
         display: block;
         margin-top: 10px;
-        padding: 10px;
+
     }
     
 
@@ -296,8 +304,6 @@ and (max-width: 1024px)
         margin-bottom: 20px;
     }
     /*Contacto*/
-    .maincontacto{
-    }
     .cardcontacto{
         text-align: center;
 
