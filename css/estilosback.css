@@ -137,7 +137,6 @@ p a{
     display:grid;
     grid-template-columns: 50% 50%;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 .cardcontacto{
     justify-self: center;
@@ -155,28 +154,20 @@ p a{
 .plan1{
     background-color: rgba(127, 255, 212, 0.658);
     text-align: center;
-    object-fit: contain;
 }
 .plan2{
     background-color: rgba(255, 235, 205, 0.637);
     text-align: center;
-    object-fit: contain;
-
 }
 .plan3{
     background-color: rgba(255, 0, 0, 0.658);
     text-align: center;
-    object-fit: contain;
-
 }
 .botonadquirir{
-    margin-top: auto;
+    justify-content: end;
     color: black;
     font-weight: bolder;
     margin-top: 20px    ;
-}
-.titulo-card{
-    font-weight:600
 }
 
 
@@ -229,8 +220,8 @@ p a{
         grid-template-areas: 
         "cabecera"
         "mainnos"
-        "pie"
-        grid-template-columns  1fr;
+        "pie";
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
     .caja1nos{
@@ -305,6 +296,7 @@ and (max-width: 1024px)
         margin-bottom: 20px;
     }
     /*Contacto*/
+
     .cardcontacto{
         text-align: center;
 
