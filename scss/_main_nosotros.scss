@@ -1,0 +1,39 @@
+.caja1nos{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: 
+    "nostxt nosimg"
+    "nostxt2 nostxt2"
+    "nosvideo nosvideo";
+
+    .nostxt{
+    grid-area: nostxt;
+    text-align: center;
+    align-self: center;
+    
+        h1{
+            font-weight: $negrita_letra;
+        }
+    }
+
+    .nosimg{
+    grid-area: nosimg;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    }
+    .nostxt2{
+    grid-area: nostxt2;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+    }
+    .nosvideo{
+    grid-area: nosvideo;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    bottom:50px
+    }
+}

@@ -1,0 +1,25 @@
+.mainplanes{
+margin-top: 20px;
+    .plan{
+        text-align: center;
+        object-fit: $img_contain;
+        .botonadquirir{
+            margin-top: auto;
+            color: black;
+            font-weight: $negrita_letra;
+            margin-top: 20px;
+        }
+        .titulo-card{
+            font-weight:600
+        }
+    }
+    .p1{
+        background-color: rgba(127, 255, 212, 0.658);
+    }
+    .p2{
+        background-color: rgba(255, 235, 205, 0.637);
+    }
+    .p3{
+        background-color: rgba(255, 0, 0, 0.658);
+    }
+}

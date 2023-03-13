@@ -1,0 +1,102 @@
+/***MEDIA QUERY***/ 
+@media (max-width:768px) {
+    /**index**/
+    .contenedor-grid{
+        grid-template-areas: 
+        "cabecera"
+        "carrusel"  
+        "principal"
+        "pie";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    }
+    .header{
+        grid-area: cabecera;
+        display: inline-block;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
+    section{
+        grid-area: carrusel;
+    }
+    main{
+        grid-area: principal;
+        display: flex;
+    }
+    footer{
+        grid-area: pie;
+    }
+    .nav1{
+        margin-top: 20px;
+    }
+    .maincontent{
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+    }
+    .foot p{
+        color: black;
+    }/*Servicios*/
+
+        .card{
+            margin: 10px;
+            text-align: center;
+            margin: auto;
+            margin-top: 15px;
+            justify-self: center;
+        }
+    /**Nosotros**/
+    .contenedor-nosotros{
+        grid-template-areas: 
+        "cabecera"
+        "mainnos"
+        "pie"
+        grid-template-columns  1fr;
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
+    .caja1nos{
+        grid-area: mainnos;
+        display: flex;
+        flex-wrap: $wrap_flex;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .nosimg{
+        display: block;
+        margin: auto;
+    }
+    .nosvideo{
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    /**Contacto**/
+    .maincontacto{
+        display: flex;
+        flex-wrap: $wrap_flex;
+    
+        .cardcontacto{
+            display: block;
+            margin: auto;
+            
+        }
+        .formcontacto{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+    iframe{
+        width: auto;
+    } 
+
+    /**Planes**/
+    .mainplanes{
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+
+}
