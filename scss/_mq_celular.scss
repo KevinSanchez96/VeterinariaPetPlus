@@ -13,9 +13,7 @@
     .header{
         grid-area: cabecera;
         display: inline-block;
-        text-align: center;
-        align-self: center;
-        justify-self: center;
+        @include center-center-center;
     }
     section{
         grid-area: carrusel;

@@ -6,11 +6,11 @@
     "nostxt nosimg"
     "nostxt2 nostxt2"
     "nosvideo nosvideo";
+    padding-top: 10px;
 
     .nostxt{
     grid-area: nostxt;
-    text-align: center;
-    align-self: center;
+    @include center-center-center;
     
         h1{
             font-weight: $negrita_letra;
@@ -19,20 +19,19 @@
 
     .nosimg{
     grid-area: nosimg;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
+    @include center-center-center;
+        img{
+            width: 100%;
+        }
     }
     .nostxt2{
     grid-area: nostxt2;
-    justify-self: center;
-    align-items: center;
+    @include center-center-center;
     padding: 20px;
     }
     .nosvideo{
     grid-area: nosvideo;
-    justify-self: center;
-    align-items: center;
+    @include center-center-center;
     position: relative;
     bottom:50px
     }
