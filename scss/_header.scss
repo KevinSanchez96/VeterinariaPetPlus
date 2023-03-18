@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,11 +6,13 @@
     padding: 10px;
     background-color: rgba(250, 235, 215, 0.575);
     .links{
-        text-align: end;
-        padding-right: 10px;
+        align-items: end;
         font-weight: $negrita_letra;
+        a{
+            margin: 10px;
+        }
     }
-    .logo{
+    .logo {
         display: flex;
         align-items: center;
     }

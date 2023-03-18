@@ -8,6 +8,23 @@
   font-family: "Raleway", sans-serif; }
 
 /*index_import*/
+.cajatextoerror {
+  text-align: center; }
+  .cajatextoerror .h1error {
+    font-size: 150px;
+    color: rgba(71, 69, 69, 0.842); }
+  .cajatextoerror .perror {
+    font-size: 50px; }
+
+.cajaperrotriste {
+  text-align: center; }
+  .cajaperrotriste .perrotriste {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 80vh;
+    margin: auto;
+    margin-bottom: 20px; }
+
 .header {
   display: flex;
   align-items: center;
@@ -16,9 +33,10 @@
   padding: 10px;
   background-color: rgba(250, 235, 215, 0.575); }
   .header .links {
-    text-align: end;
-    padding-right: 10px;
+    align-items: end;
     font-weight: bolder; }
+    .header .links a {
+      margin: 10px; }
   .header .logo {
     display: flex;
     align-items: center; }
@@ -55,7 +73,7 @@ body {
 
 .imgCarrusel {
   height: 50vh;
-  object-fit: contain;
+  object-fit: cover;
   background-color: rgba(250, 235, 215, 0.575); }
 
 .contenedor-grid {
@@ -133,7 +151,8 @@ body {
 .mainplanes {
   margin-top: 20px; }
   .mainplanes .plan, .mainplanes .p1, .mainplanes .p2, .mainplanes .p3 {
-    text-align: center; }
+    text-align: center;
+    margin: 10px; }
     .mainplanes .plan img, .mainplanes .p1 img, .mainplanes .p2 img, .mainplanes .p3 img {
       margin: auto;
       height: 350px;
