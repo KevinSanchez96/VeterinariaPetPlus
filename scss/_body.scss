@@ -1,0 +1,14 @@
+body{
+    background-image: url("../assets/images/fondo-dog.jpg");
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top:30px;
+    font-family: $monserrat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.fondoblanco{
+    background-color: rgba(250, 235, 215, 0.575);
+}

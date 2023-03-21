@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 3s;
+    &:hover{
+    color:burlywood;
+    font-weight:$negrita_letra;
+    justify-content: space-between;
+    }
+    h2{
+        margin-left: 10px;
+        font-weight: $negrita_letra;
+        color: rgb(17, 16, 16);
+    }
+}
+p a{
+    color: blue;
+}

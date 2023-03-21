@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.575);
+    .links{
+        align-items: end;
+        font-weight: $negrita_letra;
+        a{
+            margin: 10px;
+        }
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+}

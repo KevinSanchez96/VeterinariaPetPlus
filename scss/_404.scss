@@ -1,0 +1,23 @@
+.cajatextoerror {
+    text-align: center;
+
+    .h1error {
+        font-size: 150px;
+        color: rgba(71, 69, 69, 0.842);
+    }
+
+    .perror {
+        font-size: 50px;
+    }
+}
+
+.cajaperrotriste {
+    text-align: center;
+    .perrotriste {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        width: 80vh;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
